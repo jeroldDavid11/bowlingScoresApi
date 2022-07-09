@@ -14,14 +14,17 @@ import org.mockito.InjectMocks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import com.bowling.score.api.BowlingScoreApiApplication;
 import com.bowling.score.api.model.BowlingFrame;
 import com.bowling.score.api.model.BowlingGameSBoard;
 import com.bowling.score.api.repository.BowlingFrameRepository;
 import com.bowling.score.api.repository.BowlingGameSBoardRepository;
 
 @RunWith(SpringRunner.class)
+@ContextConfiguration(classes = { BowlingScoreApiApplication.class })
 @SpringBootTest
 class BowlingServiceTest {
 	@Autowired
