@@ -1,4 +1,7 @@
 # bowlingScoreApi
+
+Azure Sample service
+https://bowlingscoreapi.azurewebsites.net/
  
  Bowling API
   * POST /api/games/ (create game)
